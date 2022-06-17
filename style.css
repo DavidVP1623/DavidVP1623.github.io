@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    color: white;
+}
+
+header {
+    height: 60vh;
+    background: linear-gradient(rgba(76, 101, 163, 0.3), rgba(73, 170, 101, 0.7)), url("imagenes/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: antiquewhite;
+    font-family: 'Roboto Slab', serif;
+}
+
+.ft {
+    position: relative;
+    top: 5vh;
+    margin-left: 10vh;
+}
+
+.titulo-principal {
+    border-radius: 10px;
+    position: relative;
+    top: 6vh;
+    margin-left: 20vh;
+    width: fit-content;
+    height: fit-content;
+}
+
+.titulo-principal:hover {
+    background-color: hsla(0, 0%, 100%, .15);
+    backdrop-filter: blur(3px);
+    animation: animacion 2s linear infinite;
+    border: solid white 2px;
+    backdrop-filter: blur(4px);
+}
+
+.bton-contenedor {
+    position: relative;
+    top: 10vh;
+}
+
+.row__bton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bton-info {
+    background-color: rgb(11, 11, 170);
+    color: rgb(203, 197, 226);
+    animation: animacion 2s linear infinite;
+    margin-left: auto;
+    padding: 0.5vh 1vh 0.5vh 1vh;
+    border-radius: 35%;
+    list-style: none;
+    font-size: 3.5vh;
+}
+
+.bton-info:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 2px 3px black;
+    cursor: pointer;
+}
+
+.quien-soy {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.resenha__parrafo {
+    width: 80%;
+    margin: auto;
+    font-size: 3.5vh;
+}
+
+.foto__contenedor {
+    background-color: rgb(24, 101, 152);
+    width: fit-content;
+    padding: 2vh;
+    border-radius: 50%;
+
+}
+
+.foto__contenedor:hover {
+    border: solid rgb(8, 0, 0) 1px;
+    animation: animacion 2s linear infinite;
+
+}
+
+.foto__david {
+    width: 30vh;
+    border-radius: 50%;
+}
+
+.foto__david:hover {
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+.icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icono:hover {
+    animation: animacion 2s linear infinite;
+
+}
+.skills, .proyectos{
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-img-top:hover{
+    animation: animacion 2s linear infinite; 
+}
+
+.detalles:hover{
+    animation: animacion 2s linear infinite;
+}
+
+footer{
+    background-color: rgb(13, 77, 136);
+    font-size: 2.5vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(162, 157, 178);
+}
+@keyframes animacion {
+    0% {
+        box-shadow: 0 0 0 0 rgba(29, 171, 209, .6), 0 0 0 0 rgba(29, 171, 209, .6);
+    }
+
+    30% {
+        box-shadow: 0 0 0 10px rgba(29, 171, 209, 0), 0 0 0 0 rgba(29, 171, 209, .6);
+    }
+
+    65% {
+        box-shadow: 0 0 0 10px rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
+    }
+}

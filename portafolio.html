@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portafolio</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="ft d-flex">
+    <div class="foto__contenedor">
+      <img class="foto__david" src="imagenes\david.png" alt="">
+    </div>
+    <div class="titulo-principal p-3">
+      <h1>David Valdivia</h1>
+      <h4>Desarrollador web</h4>
+    </div>
+  </div>
+      
+    <div class="bton-contenedor container">
+      <div class="row row__bton">
+        <div class="bton-item col-sm-12 col-md-6 col-lg-3">
+          <a href="#quien-soy">
+            <button class="bton-info">Quien soy.</button>
+          </a>
+        </div>
+        <div class="bton-item col-sm-12 col-md-6 col-lg-3">
+          <a href="#habilidades"><button id="habilidades" class="bton-info">Habilidades.</button></a>
+        </div>
+        <div class="bton-item col-sm-12 col-md-6 col-lg-3">
+          <a href="#proyectos">
+            <button class="bton-info">Proyectos.</button>
+          </a>
+        </div>
+        <div class="bton-item col-sm-12 col-md-6 col-lg-3">
+          <a href="">
+            <button class="bton-info">Contacto.</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="quien-soy mt-5">
+    <div class="m-5 foto__contenedor">
+      <i class="fa-solid fa-8x fa-calculator"></i>
+      <i class="fa-thin fa-calculator"></i>
+    </div>
+    <div class="resenha">
+      <h3 class="text-center" id="quien-soy">Quien soy</h3>
+      <p class="resenha__parrafo">Soy un apasionado por las matemáticas, la música, nuevas
+        experiencias y por el aprendizaje. Estoy
+        dando mis primeros pasos en el fascinante
+        mundo del desarrollo web. ¡Vine para quedarme!
+        Siempre tengo la mejor disposición para la
+        realización de mis labores. Me gusta el trabajo en equipo y aportar con soluciones.
+        Busco un
+        puesto de trabajo desafiante.
+      </p>
+    </div>
+
+    <div class="m-5 p-2 foto__contenedor">
+      <i class="fa-solid fa-8x fa-computer"></i>    </div>
+  </div>
+
+  <div id="habilidades" class=" skills container mt-5">
+    <h2 class="text-center">Habilidades </h2>
+    <div class="mt-5 justify-content-evenly row">
+      <div class="icono col-sm-3 col-md-2 col-lg-1 border m-1 pt-2"><i class="fa-brands fa-4x fa-html5"></i>
+        <p>HTML5</p>
+      </div>
+      <div class="icono col-sm-3 col-md-2 col-lg-1 border m-1 pt-2"><i class="fa-brands fa-4x fa-css3-alt"></i>
+        <p>CSS3</p>
+      </div>
+      
+      <div class="icono col-sm-3 col-md-2 col-lg-1 border m-1 pt-2"><i class="fa-brands fa-4x fa-bootstrap"></i>
+        <p>Bootstrap</p>
+      </div>
+      <div class="icono col-sm-3 col-md-2 col-lg-1 border m-1 pt-2"><i class="fa-brands fa-4x fa-sass"></i>
+        <p>Sass</p>
+      </div>
+      <div class="icono col-sm-3 col-md-2 col-lg-1 border m-1 pt-2"><i class="fa-brands fa-4x fa-js"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="icono col-sm-3 col-md-2 col-lg-1 border m-1 pt-2"><i class="fa-brands fa-4x fa-vuejs"></i>
+        <p>VueJs</p>
+      </div>
+      
+      
+      <div class="icono col-sm-3 col-md-2 col-lg-1 border m-1 pt-2"><i class="fa-brands fa-4x fa-git-alt"></i>
+        <p>Git</p>
+      </div>
+      <div class="icono col-sm-3 col-md-2 col-lg-1 border m-1 pt-2"><i class="fa-brands fa-4x fa-github"></i>
+        <p>GitHub</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="proyectos" class="proyectos mt-5 container">
+    <h2 class="mb-4 text-center">Proyectos</h2>
+    <p class="text-center">Algunos proyectos que he desarrollado de forma autónoma y grupalmente.</p>
+    <div class="row d-flex justify-content-evenly">
+        <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="imagenes\paisaje.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Temporizador y reloj</h5>
+        <p class="card-text">Página que muestra la fecha y la hora actual (en hora, minutos y segundos). Además, muestra en pantalla la cuenta regresiva para el 1 de enero de 2023.</p>
+        <a href="#" class="detalles btn btn-outline-primary">Ver detalles.</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://plustatic.com/3400/conversions/ramas-matematicas-medium.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">¿Cómo obtener porcentajes?</h5>
+        <p class="card-text">Página que desempeña diversas operaciones matemáticas (suma, resta, tablas de multiplicación y porcentajes).</p>
+        <a href="#" class="detalles btn btn-outline-primary">Ver detalles.</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="imagenes\logo.webp" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Tecno Chile</h5>
+        <p class="card-text">Página que efectua la funcionalidad de un carrito de compras usando archivos de extensión .jon para mostrar en pantalla.</p>
+        <a href="#" class="detalles btn btn-outline-primary">Ver detalles.</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="footer p-4 mt-5">
+            <p class="text-center"> Puedes contactarme y ver mis trabajos en las siguientes plataformas.</p>
+        <div class="d-flex justify-content-center">
+            <a href="https://www.linkedin.com/in/david-valdivia-9a767b241/" target="_blank"><i class="fa-brands p-2 fa-2x fa-linkedin"></i></a>
+            <a href="https://github.com/DavidVP1623" target="_blank"><i class="fa-brands p-2 fa-2x fa-github"></i></a>
+            <a href="https://wa.me/5642195072" target="_blank"><i class="fa-brands p-2 fa-2x fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/peyregat/" target="_blank"><i class="fa-brands p-2 fa-2x fa-instagram"></i></a>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
